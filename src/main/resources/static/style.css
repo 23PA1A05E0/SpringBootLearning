@@ -1,17 +1,76 @@
-h1{
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column; /* ✅ important */
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 20px; /* spacing for buttons */
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
 .container {
-  padding: 2px 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+#userName {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#email {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Buttons */
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
 }
