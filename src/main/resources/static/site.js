@@ -14,7 +14,6 @@ function showNextUser(){
     }
 }
 
-
 async function showRandomUser() {
     try {
         let res = await fetch("https://randomuser.me/api/");
